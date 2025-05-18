@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    button {
+      position: relative;
+      padding: 20px;
+      width: 105px;
+      height: 50px;
+      color: white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-color: orangered;
+      font-size: large;
+      letter-spacing: 0.1rem;
+      border-radius: 10px;
+      border: none;
+    }
+    button span {
+      position: absolute;
+      right: 2px;
+      transform: translate(-50%, -50%);
+      transition: right 0.5s ease;
+    }
+    button span::after {
+      position: absolute;
+      margin-left: 1px;
+      content: "";
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      transition: margin-left 0.5s ease;
+      letter-spacing: -0.2rem;
+    }
+    button:hover span {
+      right: 9px;
+    }
+    button:hover span::after {
+      margin-left: 3.75px;
+      content: ">>";
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <button><span>Hover</span></button>
+  <button><span>Hover</span></button>
+  <button><span>Hover</span></button>
+</body>
+</html>
