@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling20</title>
+
+    <style>
+      @font-face {
+        font-family: my-first-font;
+        src: url(MonaspaceNeon-Medium.woff2);
+      }
+      .ex1 {
+        background-color: orangered;
+        box-shadow: 0 0 5px black;
+        position: relative;
+      }
+
+      .ex2:hover p {
+        overflow: visible !important;
+      }
+
+      .ex3 {
+        font-family: my-first-font;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ex1" style="width: 200px; height: 100px">
+      <p
+        style="
+          position: absolute;
+          margin: 0;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        "
+      >
+        Hello
+      </p>
+    </div>
+
+    <div
+      class="ex2"
+      style="
+        width: 100px;
+        height: 20px;
+        border: 1px solid black;
+        text-overflow: clip;
+        white-space: nowrap;
+      "
+    >
+      <p
+        class="ex2-p"
+        style="text-overflow: ellipsis; margin: 0; overflow: hidden"
+      >
+        This is a paragraph.
+      </p>
+    </div>
+
+    <div
+      style="
+        height: fit-content;
+        width: 200px;
+        border: 1px solid black;
+        word-break: break-all;
+        display: inline-block;
+      "
+    >
+      <b>Break all-</b> This paragraph contains a very long word:
+      thisisaveryveryveryveryveryverylongword. The long word will break and wrap
+      to the next line.
+    </div>
+    <div
+      style="
+        height: fit-content;
+        width: 200px;
+        border: 1px solid black;
+        word-break: keep-all;
+        display: inline-block;
+      "
+    >
+      <b>Keep all-</b> This paragraph contains a very long word:
+      thisisaveryveryveryveryveryverylongword. The long word will break and wrap
+      to the next line.
+    </div>
+
+    <p>This is a <span style="writing-mode: vertical-lr">paragraph</span>.</p>
+    <p class="ex3">This is a paragraph.</p>
+
+    <img
+      src="Plat1.png"
+      width="500px"
+      height="500px"
+      alt="img"
+      style="
+        border: 5px solid black;
+        border-radius: 10px;
+        transform: rotateY(80deg);
+      "
+    />
+  </body>
+</html>

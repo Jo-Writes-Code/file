@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <title>NavBarTest</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    nav {
+      border: 5px solid lightseagreen;
+      width: 500px;
+      height: 50px;
+    }
+
+    ul {
+      border: 1px solid greenyellow;
+      background-color: #313131;
+      padding: 0px;
+      margin: 0px;
+      height: inherit;
+      width: inherit;
+    }
+
+    ul li {
+      border: 1px solid black;
+      list-style-type: none;
+      float: left;
+      height: 100%;
+      width: 25%;
+    }
+
+    li a:link,
+    li a:visited {
+      display: block;
+      background-color: #333333;
+      color: white;
+      text-decoration: none;
+      height: 100%;
+      line-height: 50px;
+      text-align: center;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 1000;
+      letter-spacing: 1.2px;
+    }
+
+    li a.default {
+      background-color: #fc0000;
+    }
+
+    li a.opt:hover,
+    li a.opt:active {
+      background-color: #111114;
+    }
+
+    div ~ p {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="" class="default">Home</a></li>
+      <li><a href="" class="opt">News</a></li>
+      <li><a href="" class="opt">About</a></li>
+      <li><a href="" class="opt">Contact</a></li>
+    </ul>
+  </nav><br>
+
+  <div>
+    <div>dvvfv</div>
+    <div>dvvfv</div>
+    <div>dvvfv</div>
+    <p>Yellow</p>
+    <p>Yellow</p>
+    <div>dvvfv</div>
+    <div>dvvfv</div>
+  </div>
+</body>
+</html>

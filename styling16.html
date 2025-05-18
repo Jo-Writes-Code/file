@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling16</title>
+
+    <style>
+      /*This is a better substitute for overflow: auto;*/
+      .container::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        position: relative;
+        background-color: black;
+        height: 781px;
+        width: 783px;
+      "
+    >
+      <img src="Plat1.png" alt="image" />
+      <div
+        class="nw"
+        style="position: absolute; top: 50%; width: 100%; text-align: center"
+      >
+        Top Left
+      </div>
+      <div style="position: absolute">Text</div>
+    </div>
+
+    <div
+      style="
+        position: relative;
+        left: 100px;
+        background-color: red;
+        height: 300px;
+        width: 300px;
+      "
+    >
+      <img src="Plat1.png" alt="image" height="300px" width="300px" />
+      <div
+        style="
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          color: white;
+          z-index: 0;
+        "
+      >
+        Text
+      </div>
+    </div>
+
+    <div
+      class="container"
+      style="border: 2px solid green; overflow: auto;"
+    >
+      <div style="float: left; display: table;">
+        <img src="Plat1.png" alt="img" height="200px" width="200px" />
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+        scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+        congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+        aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+        Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
+        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+      </div>
+    </div>
+  </body>
+</html>

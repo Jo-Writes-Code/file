@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS Form</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #form1 > * {
+        padding: 15px;
+        display: inline-block;
+        margin: 8px;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      #form1:first-child {
+        margin-top: 100px;
+      }
+
+      #form1 input,
+      #form1 select,
+      #form1 textarea {
+        position: absolute;
+        right: 0px;
+        width: 50%;
+        max-width: 250px;
+      }
+
+      #form1 button {
+        display: block !important;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-color: #04aa6d;
+        color: white;
+        border: none;
+        width: 100px;
+      }
+
+      #form1 {
+        border: 1px solid black;
+        width: 500px;
+        height: 440px;
+        position: relative;
+        background-color: #f2f2f2;
+        font-family: "Rubik", sans-serif;
+        padding-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <form action="" id="form1">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Your name.."
+      /><br />
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="Your last name.."
+      /><br />
+      <label for="country">Country</label>
+      <select name="country" id="countries">
+        <option value="Australia">Australia</option>
+        <option value="Canada">Canada</option>
+        <option value="USA">USA</option></select
+      ><br />
+      <label for="subject">Subject</label>
+      <textarea
+        name="subject"
+        id="subject"
+        placeholder="Write something.."
+        rows="8"
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <textarea name="" id="" rows="8"></textarea>
+    <button>rgrg</button>
+  </body>
+</html>

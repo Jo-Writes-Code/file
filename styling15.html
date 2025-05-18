@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling15</title>
+
+    <style>
+      .nav {
+        position: fixed;
+      }
+
+      a:link {
+        text-decoration: none;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        display: inline-block;
+      }
+
+      a:visited {
+        color: antiquewhite;
+        background-color: black;
+      }
+
+      a:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+      }
+
+      a:active {
+        color: white;
+        background-color: purple;
+      }
+
+      ol {
+        background-color: #ff9999;
+        padding: 20px;
+      }
+
+      ol li {
+        background-color: #fae1e1;
+        padding: 10px;
+        color: #740000;
+      }
+
+      table {
+        background-color: beige;
+      }
+
+      table, th, td {
+        padding: 40px;
+      }
+
+      tr:nth-child(even) {background-color: antiquewhite;}
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a
+      href="https://www.w3schools.com/css/css_z-index.asp"
+      target="_blank"
+      style="cursor: progress"
+      >Home</a>
+
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <a href="">More</a>
+    </div>
+
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+
+    <div style="overflow-x: auto;">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Savings</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Savings</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Savings</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>$100</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>$100</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>$100</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$275</td>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$275</td>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$275</td>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$275</td>
+        </tr>
+        <tr>
+          <td>George</td>
+          <td>Peterson</td>
+          <td>$195</td>
+          <td>George</td>
+          <td>Peterson</td>
+          <td>$195</td>
+          <td>George</td>
+          <td>Peterson</td>
+          <td>$195</td>
+          <td>George</td>
+          <td>Peterson</td>
+          <td>$195</td>
+        </tr>
+      </table>
+    </div>
+
+    <p>This is a paragraph</p>
+    <p style="position: relative; right: 30px; top: 30px;">This is a paragraph</p>
+    <p style="position: absolute; left: 5px;">This is a paragraph</p>
+
+    <div style="width: 700px; margin: auto; font-size: 2em;">This <div> element has a width of 500px, and margin set to auto.</div>
+    <div style="max-width: 700px; margin: auto; font-size: 2em;">This <div> element has a max-width of 500px, and margin set to auto.</div>
+
+    <div style="width: 300px; height: 300px; background: lightblue; position: relative;">
+      <div style="position: absolute; top: 10px; left: 10px; background: red;">
+        I'm absolutely positioned
+      </div>
+    </div>
+
+    <!--
+    <span style="cursor: auto">auto</span><br>
+    <span style="cursor: crosshair">crosshair</span><br>
+    <span style="cursor: default">default</span><br>
+    <span style="cursor: e-resize">e-resize</span><br>
+    <span style="cursor: help">help</span><br>
+    <span style="cursor: move">move</span><br>
+    <span style="cursor: n-resize">n-resize</span><br>
+    <span style="cursor: ne-resize">ne-resize</span><br>
+    <span style="cursor: nw-resize">nw-resize</span><br>
+    <span style="cursor: pointer">pointer</span><br>
+    <span style="cursor: progress">progress</span><br>
+    <span style="cursor: s-resize">s-resize</span><br>
+    <span style="cursor: se-resize">se-resize</span><br>
+    <span style="cursor: sw-resize">sw-resize</span><br>
+    <span style="cursor: text">text</span><br>
+    <span style="cursor: w-resize">w-resize</span><br>
+    <span style="cursor: wait">wait</span>
+    -->
+  </body>
+</html>

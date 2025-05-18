@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling24</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .ex1 {
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        object-position: 100% 75%;
+      }
+      .ex2 {
+        visibility: hidden;
+      }
+      .ex3 {
+        -webkit-mask-image: radial-gradient(
+          circle,
+          black 50%,
+          rgba(0, 0, 0, 0.5) 50%
+        );
+        mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+      }
+      .ex4 {
+        -webkit-mask-image: radial-gradient(
+          ellipse,
+          black 50%,
+          rgba(0, 0, 0, 0.5) 50%
+        );
+        mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+      }
+      .bear {
+        width: 400px;
+        height: auto;
+
+        -webkit-mask-image: url(w3logo.png); /* Your transparent image as mask */
+        mask-image: url(w3logo.png);
+
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+
+        -webkit-mask-size: contain;
+        mask-size: contain;
+
+        -webkit-mask-position: center;
+        mask-position: center;
+      }
+      .container {
+        -webkit-mask-image: linear-gradient(to top, transparent, black);
+        mask-image: linear-gradient(to top, transparent, black);
+        position: relative;
+        overflow-y: scroll;
+        background-image: url(https://picsum.photos/id/1025/600/400);
+        max-width: 600px;
+      }
+      .container p {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        padding: 20px;
+        margin: 0px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body style="background-color: darkslategray">
+    <!-- Just a normal image preview of Plat1 -->
+    <div>
+      <img class="ex1" src="Plat1.png" alt="img" />
+    </div>
+
+    <!-- Image without mask -->
+    <div class="container">
+      <img class="ex2" src="https://picsum.photos/id/1025/600/400" alt="logo" />
+      <p>
+        Sunt quis sint culpa ad sit nostrud do commodo laborum commodo. Labore
+        consequat aliquip duis aute qui nulla aliquip. Proident sunt anim
+        consequat do enim in excepteur. Aute culpa magna fugiat ipsum irure ad.
+        Ut consequat magna ad officia sit mollit reprehenderit dolor proident
+        duis incididunt. Lorem qui eiusmod non ut. Amet anim amet ullamco
+        officia dolor amet do occaecat elit veniam incididunt non.<br /><br />
+        Consequat cupidatat do reprehenderit voluptate culpa sunt elit do qui do
+        do enim voluptate incididunt. Ipsum voluptate occaecat labore consequat
+        reprehenderit amet. Magna duis aliquip deserunt id voluptate officia
+        mollit velit magna. Cillum exercitation ea consequat elit minim ea
+        aliquip esse amet magna.<br /><br />
+        Nisi ea consectetur eu eiusmod in aute culpa cillum. Esse labore sit ut
+        est deserunt sunt. Ea elit reprehenderit fugiat dolore cupidatat.
+      </p>
+    </div>
+
+    <!-- Image with w3logo.png as mask -->
+    <div>
+      <img
+        class="bear"
+        src="https://picsum.photos/id/1020/600/400"
+        alt="logo"
+      />
+    </div>
+
+    <img class="ex3" src="https://picsum.photos/id/1020/600/400" alt="img" />
+
+    <img class="ex4" src="https://picsum.photos/id/1024/600/400" alt="img" />
+
+    <div
+      style="position: relative; width: fit-content"
+    >
+      <img class="ex5" src="https://picsum.photos/id/1023/600/400" alt="img" />
+      <button
+        style="
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          transform: translate(50%, -50%);
+        "
+      >
+        Button
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form3</title>
+</head>
+<body style="background-color: darkgray;">
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" value="John" readonly><br>
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd" required><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+
+      <form>
+        <label for="color">Choose Fav Color:</label>
+        <input type="color" name="color-choice" id="color" disabled>
+      </form>
+
+      <form>
+        <label for="date">Choose Date:</label>
+        <input type="date" name="date-choice" id="date">
+      </form>
+
+      <form>
+        <label for="datemax">Enter a date before 10-10-2030:</label>
+        <input type="date" name="datemax" id="datemax" max="2030-10-10">
+        <label for="datemin">Enter date after 10-10-2010:</label>
+        <input type="date" name="datemin" id="datemin" max="2010-10-10">
+        <input type="submit" value="Submit">
+      </form>
+
+      <form action="">
+        <label for="start-time">Appointment Date and time:</label>
+        <input type="datetime-local" name="start-time" id="start-time">
+        <input type="datetime" name="start-time" id="start-time">
+      </form>
+
+      <form action="">
+        <label for="email-input">Enter Email:</label>
+        <input type="email" name="email-input" id="email-input" multiple>
+      </form>
+
+      <form action="">
+        <!--Image used as a submit button.-->
+        <label for="image">Pick Image:</label><br>
+        <input type="image" src="Plat1.png" alt="Submit" style="height: 50px;width: 50px;">
+      </form>
+
+      <form action="">
+        <label for="myfile">Select File:</label>
+        <input type="file" name="myfile" id="myfile" multiple>
+      </form>
+
+      <form action="">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" autofocus>
+        <input type="hidden" name="custname" id="custname" value="6578"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <form action="">
+        <label for="bday">Birthday month and year:</label>
+        <input type="month" name="bday" id="bday">
+      </form>
+
+      <form action="">
+        <label for="num">Number 1 - 5:</label>
+        <input type="number" name="num" id="num" min="1" max="100" step="10">
+      </form>
+
+      <form action="">
+        <label for="vol">Volume (1 to 50):</label>
+        <input type="range" name="vol" id="vol" min="1" max="50">
+      </form>
+
+      <form action="">
+        <label for="gsearch">Google Search:</label>
+        <input type="search" name="gsearch" id="gsearch">
+      </form>
+
+      <form action="">
+        <label for="tel-num">Enter Phone Number:</label>
+        <input type="tel" name="tel-num" id="tel-num" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      </form>
+
+      <form action="" enctype="multipart/form-data">
+        <label for="appt">Select a time:</label>
+        <input type="time" name="appt" id="appt">
+      </form>
+
+      <form action="">
+        <label for="page-url">Enter URL:</label>
+        <input type="url" name="page-url" id="page-url">
+      </form>
+
+      <form action="">
+        <label for="input-week">Enter preferred week:</label>
+        <input type="week" name="input-week" id="input-week">
+      </form>
+
+      <form method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" value="John" size="50"><br>
+        <label for="pwd">PIN:</label>
+        <input type="password" name="pwd" id="pwd" size="4" maxlength="4" required><br><br>
+        <input type="submit" value="Submit" formmethod="get">
+        <input type="reset" value="Reset">
+      </form>
+
+      <form action="" autocomplete="off">
+        <label for="code">Country Code:</label>
+        <input type="text" name="code" id="code" size="3" pattern="[A-Za-z]{3}">
+      </form>
+</body>
+</html>

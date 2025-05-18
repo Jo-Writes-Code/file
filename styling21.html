@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling21</title>
+
+    <style>
+      @keyframes bg-color {
+        0% {
+          background-color: red;
+          top: 100px;
+          left: 0px;
+        }
+        25% {
+          background-color: green;
+          top: 0px;
+          left: 200px;
+        }
+        50% {
+          background-color: blue;
+          top: 200px;
+          left: 200px;
+        }
+        75% {
+          background-color: yellow;
+          top: 200px;
+          left: 0px;
+        }
+        100% {
+          background-color: purple;
+          top: 0px;
+          left: 200px;
+        }
+      }
+      .ex1 {
+        width: 300px;
+        height: 300px;
+        background-color: orangered;
+        border-radius: 20px;
+        /*Shorthand: transition: width 2s ease 0.01s;*/
+        transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 0.01s;
+      }
+
+      .ex1:hover {
+        width: 500px;
+      }
+
+      .ex2 {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        background-color: red;
+        animation-name: bg-color;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+      }
+
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        margin-top: 7px;
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-radius: 7px;
+        padding: 2px;
+      }
+
+      .tooltip {
+        float: right;
+        padding: 10px;
+        height: 18px;
+      }
+
+      .tooltip:hover .tooltip-text {
+        visibility: visible !important;
+      }
+
+      .tooltip-text::after {
+        content: " ";
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+        position: absolute;
+        bottom: 100%;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ex1"></div>
+    <div class="ex2"></div>
+
+    <div class="tooltip">
+      Hover over me!
+      <div class="tooltip-text">Some info...</div>
+    </div>
+    <div class="tooltip">
+      I have smt for you,
+      <div class="tooltip-text">Nah js keep going..</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style(3).css">
+    <!--
+    This links to a stylesheet (located on the html folder) on the current web page:
+    <link rel="stylesheet" href="/html/styles.css">
+
+    But this uses a full URL to the stylesheet:
+    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+    -->
+    <style>
+        a:link {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: cyan;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+    <a href="https://roadmap.sh/full-stack" target="_blank">Visit W3Schools</a>
+    <a href="https://roadmap.sh/full-stack">
+        <img src="My Portrait1500-2.png" alt="learn coding" title="learn coding" style="height: 20px;width: 20px;">
+    </a>
+    <a href="mailto:" target="_blank">Send Email</a>
+    <button onclick="document.location='https://roadmap.sh/full-stack'">The Roadmap</button>
+    <button onclick="window.open('https://roadmap.sh/full-stack', '_blank')">The Roadmap</button><hr>
+    <a href="https://roadmap.sh/full-stack">Click Here for full-stack-developer</a>
+    <a href="https://chatgpt.com">ChatGPT</a><br>
+    <a href="styling4.html">Jump to Styling4</a>
+    <a href="styling4.html#C4">Jump to Styling4.Chapter4</a>
+</body>
+</html>

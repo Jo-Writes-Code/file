@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling18</title>
+
+    <style>
+      [title~="flower"] {
+        border: 5px solid yellow;
+      }
+
+      a[target="_self"] {
+        color: greenyellow;
+        text-decoration: none;
+      }
+
+      [class|="ex5"] {
+        color: brown;
+      }
+
+      [class*="test"] {
+        color: aqua;
+      }
+
+      /*THIS IS FOR ATTRIBUTE VALUES THAT END IN "TEST"
+      [class*="test"] {
+        color: aqua;
+      }*/
+
+      .container p {
+        color: red;
+      }
+
+      /*You could also use !important after "green" to boost priority*/
+      #test[class|="top"] {
+        color: green;
+      }
+
+      #test::after {
+        content: "FAIL";
+      }
+      #test[class|="top"]::after {
+        content: "PASS";
+      }
+
+      .ex1 p {
+        display: none;
+        padding: 20px;
+        background-color: yellow;
+      }
+
+      .ex1 div:hover + p {
+        display: block;
+      }
+
+      .ex2 p:first-child {
+        color: blue;
+      }
+
+      .ex3 p:first-child i {
+        color: blue;
+      }
+
+      .ex4 q:lang(no) {
+        quotes: "/" "/";
+      }
+
+      ::marker {
+        color: red;
+        font-size: 23px;
+      }
+
+      ::selection {
+        color: red;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ex1">
+      <div>This is text</div>
+      <p>This is a paragraph.</p>
+    </div>
+
+    <div class="ex2">
+      <p>This is a paragraph.</p>
+      <p>This is a paragraph.</p>
+      <p>This is a paragraph.</p>
+    </div>
+
+    <div class="ex3">
+      <p><i>This</i> is <i>a</i> paragraph.</p>
+      <p>This <i>is</i> a paragraph.</p>
+      <p><i>This</i> is a <i>paragraph.</i></p>
+    </div>
+
+    <div class="ex3">
+      <p><i>This</i> is <i>a</i> paragraph.</p>
+      <p>This <i>is</i> a paragraph.</p>
+      <p><i>This</i> is a <i>paragraph.</i></p>
+    </div>
+
+    <p class="ex4">
+      She said <q lang="no">Practice makes perfect.</q> in the assembly.
+    </p>
+
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+
+    <p title="flower">Hover over this paragraph.</p>
+
+    <a href="https://roadmap.sh/full-stack?fl=0">roadmap</a>
+    <a href="https://roadmap.sh/full-stack?fl=0" target="_self"
+      >roadmap new tab</a
+    >
+    <a href="https://roadmap.sh/full-stack?fl=0" target="_blank"
+      >roadmap new tab</a
+    >
+
+    <p class="ex5">This is a paragraph.</p>
+    <br />
+
+    <div class="container">
+      <p class="top" id="test">This is a paragraph.</p>
+      <p class="top-dog" id="test">This is a paragraph.</p>
+      <p class="on-top" id="test">This is a paragraph.</p>
+    </div><br>
+
+    <p class="test-project">This is a paragraph.</p>
+    <p class="project-test">This is a paragraph.</p>
+    <p class="projecttest">This is a paragraph.</p>
+  </body>
+</html>

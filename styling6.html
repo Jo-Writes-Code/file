@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Styling6</title>
+    <!--border-collapse: collapse;-->
+    <!--border-style: dotted;-->
+    <style>
+        table {
+            border-spacing: 10px;
+        }
+
+        tr, th, td {
+            border: 1px, solid, white;
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <caption>idk what this is</caption>
+        <tr>
+            <th colspan="2">Job</th>
+            <th style="width: 55%;">Interest</th>
+            <th>Likelyhood</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>Choice1:</th>
+            <td>Doctor</td>
+            <td>Medical School, Treating patients</td>
+            <td>Low</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Choice2&3:</th>
+            <td>Software Developer</td>
+            <td>Programming, Solving proplems</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>Fire Fighter</td>
+            <td>Rescue, Physical capability</td>
+            <td>Not Sure</td>
+        </tr>
+    </table>
+</body>
+</html>

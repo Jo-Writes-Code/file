@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlideIn</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .container .blue-shape {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        opacity: 1;
+        pointer-events: none;
+      }
+      .container .blue-shape .bg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+        height: 100%;
+        width: 0%;
+        border-radius: 20px;
+        transform-origin: left;
+        transition: width 0.5s ease;
+        overflow: hidden;
+      }
+      .container .blue-shape .bg .text {
+        color: white;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+        transition: left 0.5s ease;
+      }
+      .container .ex1 {
+        position: absolute;
+        height: inherit;
+        width: inherit;
+        border-radius: inherit;
+      }
+
+      .container .ex1:hover + .blue-shape > .bg {
+        width: 100%;
+        opacity: 1;
+      }
+
+      .container .ex1:hover + .blue-shape > .bg > .text {
+        left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="Plat1.png"
+      height="200px"
+      width="200px"
+      style="border-radius: 20px"
+      alt="img"
+    />
+
+    <div class="container">
+      <img class="ex1" src="Plat1.png" alt="img" />
+      <div class="blue-shape">
+        <div class="bg">
+          <div class="text">Hello!</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

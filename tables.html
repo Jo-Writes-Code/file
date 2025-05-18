@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        <!--hello-->
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border-bottom: 2px solid black;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: antiquewhite;
+        }
+
+        td:nth-child(even), th:nth-child(even) {
+            background-color: antiquewhite;
+        }
+
+        td:hover {
+            background-color: burlywood;
+        }
+
+    </style>
+    <title>tables</title>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2">
+            <col span="1" style="background-color: aquamarine;">
+        </colgroup>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Savings</th>
+            <th>Target</th>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Marlin</td>
+            <td>300$</td>
+            <td>750$</td>
+        </tr>
+        <tr>
+            <td>Tim</td>
+            <td>Kimberson</td>
+            <td>125$</td>
+            <td>1500$</td>
+        </tr>
+        <tr>
+            <td>Greenwood</td>
+            <td>Stevens</td>
+            <td>250$</td>
+            <td>800$</td>
+        </tr>
+    </table>
+</body>
+</html>
