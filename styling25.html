@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling25</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #0e0e0e;
+      overflow: hidden;
+    }
+    .pagination {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      margin: 0;
+      max-width: 464.938;
+    }
+    .pagination .current {
+      background-color: #04aa6d;
+    }
+    .pagination a {
+      flex: 0 1 auto;
+      min-width: 0;
+      color: white;
+      text-decoration: none;
+      padding: clamp(0px, 3vw, 20px) clamp(0px, 4vw, 25px);
+      margin: 0;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      transition: all 0.5s ease;
+    }
+    .pagination a:first-child {
+      border-radius: 5px 0px 0px 5px;
+    }
+    .pagination a:last-child {
+      border-radius: 0px 5px 5px 0px;
+    }
+    .pagination a:hover {
+      background-color: white;
+      color: black;
+    }
+    .pagination .current:hover {
+      background-color: #04aa6d;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="pagination">
+    <a href=""><</a>
+    <a href="">1</a>
+    <a href="" class="current">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <a href="">6</a>
+    <a href="">></a>
+  </div>
+  <p><span style="width: 10vw; color: white; border: 1px solid blue;">This is a paragraph.</span></p>
+</body>
+</html>
+
+<!--&raquo; | &raquo;-->
