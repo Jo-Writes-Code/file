@@ -1,0 +1,54 @@
+@property --my-bg-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: lightgray;
+}
+
+@property --my-txt-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: darkblue;
+}
+
+@property --start-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #eadedb;
+}
+
+@property --end-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #bc70a4;
+}
+
+body {
+  background-color: var(--my-bg-color);
+}
+
+p {
+  color: var(--my-txt-color);
+}
+
+.ex1 {
+  display: block;
+  width: auto;
+  height: 100px;
+  background-image: linear-gradient(var(--start-color), var(--end-color));
+  animation: bg-change 2s linear 0s infinite /*alternative*/;
+}
+
+@keyframes bg-change {
+  /*from {
+    --start-color: #EADEDB;
+    --end-color: #BC70A4;
+  }
+  to {
+    --start-color: #BC70A4;
+    --end-color: #EADEDB;
+  }*/
+  50% {
+    --start-color: #bc70a4;
+    --end-color: #eadedb;
+  }
+}

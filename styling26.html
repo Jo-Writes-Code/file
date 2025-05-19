@@ -1,79 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Styling26</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling26</title>
 
-  <style>
-    :root {
-      --green: #04aa6d;
-    }
-    * {
-      box-sizing: border-box;
-      /*outline: 1px solid green ;
-      outline-offset: 10px;*/
-    }
-    body {
-      background-color: #0e0e0e;
-    }
-    .top {
-      background-color: var(--green);
-      display: block;
-      padding: 10px;
-    }
-    .top h1 {
-      text-align: center;
-    }
-    .container {
-      --fontsize: 20px;
-      display: block;
-      column-count: 3;
-      column-rule: 1px solid var(--green);
-      column-gap: 20px;
-      color: darkgrey;
-      column-width: 100px;
-      font-size: var(--fontsize);
-    }
-    .container h1 {
-      column-span: all;
-    }
-    .ex1 {
-      --green: #005d8b;
-      width: 300px;
-      resize: horizontal;
-      overflow: auto;
-      border: 1px solid var(--green);
-      padding: 20px;
-    }
-    .ex1 p {
-      margin: 0;
-      color: darkgray;
-    }
-    @media screen and (max-width: 550px) {
+    <style>
       :root {
-        --green: #005d8b;
+        --green: #04aa6d;
+      }
+      * {
+        box-sizing: border-box;
+        /*outline: 1px solid green ;
+      outline-offset: 10px;*/
+      }
+      body {
+        background-color: #0e0e0e;
+      }
+      .top {
+        background-color: var(--green);
+        display: block;
+        padding: 10px;
+      }
+      .top h1 {
+        text-align: center;
       }
       .container {
-        --fontsize: 12px;
-        column-count: 1;
+        --fontsize: 20px;
+        display: block;
+        column-count: 3;
+        column-rule: 1px solid var(--green);
+        column-gap: 20px;
+        color: darkgrey;
+        column-width: 100px;
         font-size: var(--fontsize);
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="top">
-    <h1>Top</h1>
-  </div>
-  <div class="container">
-    <p>Cupidatat sunt Lorem veniam enim commodo commodo duis sunt culpa non anim adipisicing proident laboris. Excepteur amet labore aliquip ipsum Lorem. Sint fugiat pariatur ex elit amet duis in mollit. Cupidatat sunt ullamco duis dolor dolore eu ea dolor tempor ex aute.</p>
-    <p>Voluptate velit in veniam ipsum anim veniam aliquip labore aute deserunt excepteur magna adipisicing minim. Non eu cillum magna dolore tempor occaecat sunt cillum voluptate veniam cillum. Officia excepteur adipisicing nulla anim irure fugiat fugiat laborum laboris laboris nulla culpa consectetur. Commodo consequat reprehenderit minim ipsum commodo irure. Mollit non ipsum proident officia aliqua.</p>
-    <p>Elit nulla occaecat nostrud ullamco adipisicing consequat pariatur commodo dolor. Dolore ex id reprehenderit voluptate duis exercitation in Lorem nisi enim sunt qui. Excepteur incididunt dolor elit consectetur commodo incididunt cillum amet mollit fugiat tempor. Nulla amet elit fugiat occaecat aliquip deserunt occaecat ex non ullamco. Qui non nulla do proident labore sunt mollit laboris veniam. Aliqua consequat ipsum commodo mollit nulla velit quis. Est consequat esse mollit amet reprehenderit ad dolore laborum deserunt tempor.</p>
-  </div>
+      .container h1 {
+        column-span: all;
+      }
+      .ex1 {
+        --green: #005d8b;
+        width: 300px;
+        resize: horizontal;
+        overflow: auto;
+        border: 1px solid var(--green);
+        padding: 20px;
+      }
+      .ex1 p {
+        margin: 0;
+        color: darkgray;
+      }
+      @media screen and (max-width: 550px) {
+        :root {
+          --green: #005d8b;
+        }
+        .container {
+          --fontsize: 12px;
+          column-count: 1;
+          font-size: var(--fontsize);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <h1>Top</h1>
+    </div>
+    <div class="container">
+      <p>
+        Cupidatat sunt Lorem veniam enim commodo commodo duis sunt culpa non
+        anim adipisicing proident laboris. Excepteur amet labore aliquip ipsum
+        Lorem. Sint fugiat pariatur ex elit amet duis in mollit. Cupidatat sunt
+        ullamco duis dolor dolore eu ea dolor tempor ex aute.
+      </p>
+      <p>
+        Voluptate velit in veniam ipsum anim veniam aliquip labore aute deserunt
+        excepteur magna adipisicing minim. Non eu cillum magna dolore tempor
+        occaecat sunt cillum voluptate veniam cillum. Officia excepteur
+        adipisicing nulla anim irure fugiat fugiat laborum laboris laboris nulla
+        culpa consectetur. Commodo consequat reprehenderit minim ipsum commodo
+        irure. Mollit non ipsum proident officia aliqua.
+      </p>
+      <p>
+        Elit nulla occaecat nostrud ullamco adipisicing consequat pariatur
+        commodo dolor. Dolore ex id reprehenderit voluptate duis exercitation in
+        Lorem nisi enim sunt qui. Excepteur incididunt dolor elit consectetur
+        commodo incididunt cillum amet mollit fugiat tempor. Nulla amet elit
+        fugiat occaecat aliquip deserunt occaecat ex non ullamco. Qui non nulla
+        do proident labore sunt mollit laboris veniam. Aliqua consequat ipsum
+        commodo mollit nulla velit quis. Est consequat esse mollit amet
+        reprehenderit ad dolore laborum deserunt tempor.
+      </p>
+    </div>
 
-  <div class="ex1">
-    <p>This is a paragragh.<br><br>Consectetur et aute esse magna elit et.Veniam ex minim culpa mollit adipisicing ipsum do nostrud eu.</p>
-  </div>
-</body>
+    <div class="ex1">
+      <p>
+        This is a paragragh.<br /><br />Consectetur et aute esse magna elit
+        et.Veniam ex minim culpa mollit adipisicing ipsum do nostrud eu.
+      </p>
+    </div>
+  </body>
 </html>

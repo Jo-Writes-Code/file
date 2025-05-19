@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      height: 150px;
+      justify-content: center;
+      align-items: center;
+      background-color: #fae1e1;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #ff9999;
+    }
+    .container > div {
+      column-count: 2;
+      column-gap: 0.4vw;
+      padding: 0.4vw;
+    }
+
+    .container > div > img {
+      width: 100%;
+      height: auto;
+      padding: 0.4vw;
+      border-radius: 10%;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="txt">
+      <h1>Responsive Image Gallery</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div>
+      <img src="https://picsum.photos/id/237/600/400" alt="">
+      <img src="https://picsum.photos/id/598/600/500" alt="">
+      <img src="https://picsum.photos/id/250/600/200" alt="">
+      <img src="https://picsum.photos/id/670/500/400" alt="">
+      <img src="https://picsum.photos/id/1076/400/400" alt="">
+      <img src="https://picsum.photos/id/50/600/400" alt="">
+      <img src="https://picsum.photos/id/30/600/800" alt="">
+    </div>
+    <div>
+      <img src="https://picsum.photos/id/238/600/400" alt="">
+      <img src="https://picsum.photos/id/534/600/500" alt="">
+      <img src="https://picsum.photos/id/930/600/200" alt="">
+      <img src="https://picsum.photos/id/201/500/400" alt="">
+      <img src="https://picsum.photos/id/995/400/400" alt="">
+      <img src="https://picsum.photos/id/6/600/400" alt="">
+      <img src="https://picsum.photos/id/54/600/800" alt="">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+
+    <style>
+      body {
+        background-color: #0e0e0e;
+      }
+
+      .ex1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #04aa6d;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .ex1 > div {
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+      }
+
+      .ex1 > .item1 {
+        grid-area: 1 / span 2;
+      }
+
+      .container {
+        display: grid;
+        background-color: #04aa6d;
+        grid-template-areas:
+        'header header header header header'
+        'menu main main main right'
+        'menu footer footer footer footer'
+        ;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .container > div {
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+      }
+
+      .container > .item1 {grid-area: header}
+      .container > .item2 {grid-area: menu}
+      .container > .item3 {grid-area: main}
+      .container > .item4 {grid-area: right}
+      .container > .item5 {grid-area: footer}
+    </style>
+  </head>
+  <body>
+    <div class="ex1">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+    </div><br>
+    <div class="container">
+      <div class="item1">Header</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">Right</div>
+      <div class="item5">Footer</div>
+    </div>
+  </body>
+</html>
